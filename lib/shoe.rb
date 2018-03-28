@@ -7,7 +7,7 @@ class Shoe
   def initialize(brand)
     @brand = brand
     
-    if BRANDS.contain(brand) != true
+    if BRANDS.member?(brand) != true
     BRANDS << brand
   end
 
